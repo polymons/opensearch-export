@@ -4,10 +4,14 @@ Simple script that queries OpenSearch logs and exports them to CSV or JSON.
 # To run the script:
 
 ### Create virtual environment
+```bash
 python -m venv .venv
+```
 
 ### Activate virtual environment
+```bash
 .venv\Scripts\activate
+```
 
 ### Install dependencies
 ```bash
