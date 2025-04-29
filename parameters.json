@@ -1,0 +1,26 @@
+{
+    "opensearch": {
+        "connection": {
+            "host": "your-opensearch-host",
+            "port": 9200,
+            "username": "your-username",
+            "password": "your-password",
+            "use_ssl": true,
+            "verify_certs": false,
+            "ssl_show_warn": false
+        },
+        "index": "your-index-pattern-*",
+        "timespan": {
+            "start": "YYYY-MM-DDTHH:mm:ss",
+            "end": "YYYY-MM-DDTHH:mm:ss"
+        },
+        "query": {},
+        "output": {
+            "format": "csv",
+            "formats_supported": ["json", "csv"],
+            "file_path": "output/exported_data.csv",
+            "batch_size": 1000
+        },
+        "scroll": "5m"
+    }
+}
